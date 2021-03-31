@@ -4,7 +4,7 @@ let provider = new ethers.providers.InfuraProvider("ropsten", "ec6d2493e2004b1f9
 
 function MnemonicToPrivate() {
     
-	// let mnemonic = "frog prosper girl lens era celery blue cook purity trap base margin";
+	// let mnemonic = ".. .. .. ... .. ... ... ... ... ... ... ...";
 	
 	var mnemonic = $("#inputbalance").val();
 
@@ -26,7 +26,7 @@ function MnemonicToPrivate() {
 		} catch (e) {
 					$('#modalresult').modal('show');
 					$(".modal-title").html('<i style="color:white" class="fas fa-exclamation-circle"></i> Invalid Mnemonic');
-					$(".modalcontent").html("Your mnemonic phrases is invalid. This validation is made from ethers.js library.");
+					$(".modalcontent").html("Your mnemonic phrase is invalid. This validation is made from ethers.js library.");
 					$("#inputbalance").val("");
 				}
 								 

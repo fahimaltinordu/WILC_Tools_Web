@@ -106,7 +106,11 @@ body {
     justify-content: center;
 	box-sizing: border-box;
 	bottom: 0;
-    position: sticky;
+    position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;
+	position:sticky;
 }
 #copyright1 {
 	margin-top: 0;
@@ -117,6 +121,10 @@ body {
 	width: 100%;
 	height:130px;
 	color: #ffffff;
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;
 	position:sticky;
 	top:0;
 	background:#134981;

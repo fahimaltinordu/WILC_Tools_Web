@@ -239,13 +239,26 @@ p {
 	}
 	
 }
-@media only screen and (max-height:600px) {
+@media only screen and (max-height:568px) {
 	.cardlogo img {
 		height:100px;
 	}
-	
-}
+	.content {
+		margin-top: 5px;
+	}
+	#createbutton {
+		margin-top: 10px;
+	}
+	.orta-alan {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		height: 398px;
+	}
+	#inputbalance {
+		margin-bottom: 15px;
+	}
 
+}
 
 
 

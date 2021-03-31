@@ -271,6 +271,16 @@ p {
 	#copyright1 {
 		font-size: 9px;
 	}
-
-
+}
+@media only screen and (max-height:568px) {
+	#brand0 {
+		height:80px;
+	}
+	#brand0 #brandlogo {
+		height:50px !important;
+	}
+	#copyright0 {
+		height:auto;
+	}
+	
 }

@@ -1,0 +1,354 @@
+@charset "utf-8"; /* charset tanımı css kodlarının en üstünde olur. */
+* {
+    font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
+}
+body {
+	margin:0;
+	padding:0;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.menu-bar {
+	height:100px;
+	width:100%;
+	background-color: #134981;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+.logo {
+	display:flex;
+	align-items:center;
+	border-bottom: 2px solid white;
+}
+
+.logo img {
+	height:50px;
+	margin-bottom:5px;
+}
+
+.title {
+	color:white;
+	display:flex;
+	align-items:center;
+	font-weight: 800;
+}
+
+
+.orta-alan {
+	width:60%;
+	border-radius:10px;
+	box-shadow:1px 0px 11px 6px rgba(0,0,0,0.49);border:0;
+	background: #ececec;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 13px;
+	box-sizing: border-box;
+	min-height: calc(100vh - 190px);
+	/* position:relative; */
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+}
+
+.cardlogo {
+	margin-top: 10px;
+}
+.cardlogo img {
+	height:150px;
+}
+
+.content {
+	box-shadow: 0 0 0 0.25rem rgb(19 73 129 / 40%);
+	padding:5px;
+	border-radius:5px;
+	width:90%;
+	margin-top:30px;
+}
+.content p {
+	font-size:16px;
+}
+.content h3 {
+	font-size:22px;
+}
+
+#inputbalance {
+	width:90%;
+	text-align:center;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
+#inputbalance:focus {	
+	border-color: #134981;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(19 73 129 / 40%);
+}
+
+
+
+#createbutton {
+	cursor: pointer;
+	width: 90%;
+	height:3.3em;
+	font-size:1.2em;
+	font-weight:bold;
+    border-radius: 5px;
+    background-color: #134981;
+    color: white;
+    outline: 0;
+	border: 0;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	
+}
+#createbutton:hover {
+	background-color: white;
+	box-shadow: 0 0 0 0.25rem rgb(19 73 129 / 40%); 
+    color: #134981;
+	transition:0.5s;
+}
+#createbutton:active {
+	transform: scale(0.98); 
+	box-shadow: 0 0 0 0.25rem rgb(19 73 129 / 40%); 
+	
+}
+
+.footer {
+	background-color:#134981;
+	color:white;
+	width:100%;
+	height: 50px;
+	box-sizing:border-box;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+}
+
+.modal-header {
+    background: #134981;
+	color:white;
+}
+.modal-content  {
+    font-size:15px;
+}
+.modal-body {
+    word-break: break-word;
+	
+}
+.closemodal {
+	width:30%;
+	padding:5px;
+	font-weight:bold;
+    border-radius: 5px;
+    background-color: #134981;
+    color: white;
+    outline: 0;
+	border: 0;
+
+}
+.closemodal:hover {
+	background-color: white;
+	/* border:thin solid #134981; */
+	box-shadow: 0 0 0 0.25rem rgb(19 73 129 / 40%); 
+    color: #134981;
+	transition:0.5s;
+}
+.closemodal:active {
+	transform: scale(0.98); 
+	box-shadow: 0 0 0 0.25rem rgb(19 73 129 / 40%); 
+	
+}
+.closemodal:focus {
+    outline: 0;
+}
+
+#show_hide_password {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+	
+}
+#show_hide {
+	width:50px;
+	border: 1px solid #ced4da;
+    font-size: 17px;
+    padding: 5px;
+    margin-left: 8px;
+    border-radius: 2px;
+	
+}
+#show_hide:hover  {
+	background-color:#f1f1f1;
+	
+}
+#btncreatenewwallet {
+	width: 90%;
+	height:2.3em;
+	font-size:1.2em;
+	font-weight:bold;
+    border-radius: 5px;
+    background-color: #134981;
+    color: white;
+    outline: 0;
+	border: 0;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	background-position: center;
+   transition: background 0.8s;
+	
+}
+#btncreatenewwallet:hover {
+	background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+#btncreatenewwallet:active {
+	background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+	
+}
+#createwalleterror {
+	color: #e81352;
+}
+
+.close {  
+	/* height: 30px; */
+    /* width: 30px; */
+	background-color: #e81352;
+    color: white;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+}
+
+
+.close:focus, .close:active, .close:hover {
+	background-color: #ea4e7d;
+    color: white;
+	outline: 0;
+	box-shadow:0 6px 6px rgba(10,16,20,.15), 0 0 52px rgba(10,16,20,.12);border:0;
+}
+
+.progress {
+	width: 90%;
+    margin: auto;
+    margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.progress,
+.iew_form__create_new_wallet .alert,
+.iew_form__unlock_wallet .alert,
+.iew__view_main {
+	display: none;
+}
+
+#iew_button__upload_json {
+	overflow: hidden;
+    width: 100%;
+}
+/* New Wallet */
+
+.iew_form__create_new_wallet_done {
+	display: none;
+}
+
+
+.progress-bar {
+    background-color: #134981;
+    border-radius:0;
+}
+
+
+@media only screen and (max-width:992px) {
+	.footer p {
+		font-size:12px;
+	}
+	.orta-alan {
+		width:80%;
+	}
+	.cardlogo img {
+		height:140px;
+	}
+	#createbutton {
+		font-size:1.2em;
+	}
+	.content p {
+		font-size:14px;
+	}
+	.content h3 {
+		font-size:18px;
+	}
+	
+}
+
+
+@media only screen and (max-width:768px) {
+	.footer p {
+		font-size:10px;
+	}
+	.cardlogo img {
+		height:120px;
+	}
+	.orta-alan {
+		width:85%;
+	}
+	#createbutton {
+		font-size:1em;
+	}
+	.content p {
+		font-size:10px;
+	}
+	.content h3 {
+		font-size:15px;
+	}
+	
+}
+
+@media only screen and (max-height:600px) {
+	.cardlogo img {
+		height:100px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+

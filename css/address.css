@@ -234,12 +234,17 @@ p {
 	}
 	
 }
+@media only screen and (max-width:500px) {
+	.orta-alan input#inputbalance::placeholder{
+		font-size: 12px;
+	}
+	
+}
 
 @media only screen and (max-height:600px) {
 	.cardlogo img {
 		height:100px;
 	}
-	
 }
 
 

@@ -71,10 +71,10 @@ body {
 }
 
 .step-active {
-  background: #c0d4e6;
-  color: #fff;
-  border: 1px solid #c0d4e6;
-  
+  background: #07c088;
+  /* color: #fff;
+  border: 1px solid #c0d4e6; */
+  transition: background-color 1s;
 }
 
 .form {
@@ -130,11 +130,12 @@ input[type="number"] {
   border-radius: 0.5rem;
   outline: none;
   border: 1px solid #c0d4e6;
+  padding-left:25px;
 }
 
 #usdsymbol {
 	position: relative; 
-	left:20px;
+	left:25px;
 	font-weight: 800;
 }
 
@@ -705,7 +706,7 @@ p {
 		font-size: 16px;
 	}
 	#usdsymbol {
-		font-size: 11px;
+		font-size: 16px;
 	}
 	#errorarea, #errorarea2 > p { 
 		font-size:10px;
@@ -739,3 +740,59 @@ p {
 
 }
 
+@media screen and (min-height:850px) {
+	#disclaimer0 {
+		font-size: 16px;
+		flex:1;
+	}
+	#merkez {
+		flex:3;
+	}
+	.ustbilgi {
+		padding: 50px;
+		margin-bottom: 40px;
+	}
+	.ustbilgi #logo {
+		width: 220px;
+	}
+	.ustbilgi h2 {
+		font-size: 25px;
+	}
+	.ustbilgi p {
+		font-size: 15px;
+	}
+	.stepper {
+		width: 90%;
+	}
+	.stepper .step--1, .step--2, .step--3 {
+		padding: 1.1rem 0;
+		font-size:20px;
+	}
+	.form {
+		width: 90%;
+	}
+	.form--header-container > h1 {
+		font-size: 25px;
+	}
+	.form--header-container > p {
+		font-size: 15px;
+	}
+	input[type="text"], input[type="number"] {
+		font-size: 20px;
+	}
+	#usdsymbol {
+		font-size: 20px;
+	}
+	#errorarea, #errorarea2 > p {
+		font-size: 14px;
+	}
+	.form__btn {
+		padding: 12px 0;
+		width: 12rem;
+		margin-bottom: 20px;
+		font-size:20px;
+	}
+	#refresh, #refresh2, #refresh3, #check, #sendemail {
+		font-size: 20px;
+	}
+}

@@ -92,7 +92,7 @@ p {
 	padding:5px;
 	border-radius:5px;
 	width:90%;
-	margin-top:30px;
+	margin-top:10px;
 }
 .content p {
 	font-size:16px;
@@ -338,11 +338,21 @@ p {
 	
 }
 
-@media only screen and (max-height:600px) {
+@media only screen and (max-height:568px) {
 	.cardlogo img {
 		height:100px;
 	}
-	
+	#createbutton {
+		margin-top: 10px;
+	}
+	.orta-alan {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		height: 398px;
+	}
+	.cardlogo {
+		margin-top: 0;
+	}
 }
 
 

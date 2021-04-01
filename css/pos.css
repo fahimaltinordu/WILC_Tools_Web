@@ -256,7 +256,11 @@ button:hover {
     background-color: #134981;
     border-color: #134981;
 }
-
+#refresh20:hover {
+    color: #fff;
+    background-color: #316292;
+    border-color: #316292;
+} 
 #refresh2:hover {
     color: #fff;
     background-color: #316292;
@@ -499,10 +503,10 @@ p {
 	#countdown {
 		width: 50%;
 	}
-	#refresh, #refresh2, #refresh3, #check, #sendemail {
+	#refresh, #refresh2, #refresh3, #refresh20, #check, #sendemail {
 		font-size:16px;
 	}
-	#sendemail, #check, #refresh, #refresh2, #refresh3 {
+	#sendemail, #check, #refresh, #refresh2, #refresh20, #refresh3 {
 		width:25%;
 	}
 	#paymentinfo {
@@ -554,10 +558,10 @@ p {
 	#countdown {
 		width: 60%;
 	}
-	#refresh, #refresh2, #refresh3, #check, #sendemail {
+	#refresh, #refresh2, #refresh20, #refresh3, #check, #sendemail {
 		font-size:14px;
 	}
-	#sendemail, #check, #refresh, #refresh2, #refresh3 {
+	#sendemail, #check, #refresh, #refresh2, #refresh20, #refresh3 {
 		width:30%;
 	}
 	#paymentinfo {
@@ -609,10 +613,10 @@ p {
 	#countdown {
 		width: 70%;
 	}
-	#refresh, #refresh2, #refresh3, #check, #sendemail {
+	#refresh, #refresh2, #refresh20, #refresh3, #check, #sendemail {
 		font-size:13px;
 	}
-	#sendemail, #check, #refresh, #refresh2, #refresh3 {
+	#sendemail, #check, #refresh, #refresh2, #refresh20, #refresh3 {
 		width:35%;
 	}
 	#paymentinfo {
@@ -664,10 +668,10 @@ p {
 		width: 80%;
 		font-size: 11px;
 	}
-	#refresh, #refresh2, #refresh3, #check, #sendemail {
+	#refresh, #refresh2, #refresh3, #refresh20, #check, #sendemail {
 		font-size:11px;
 	}
-	#sendemail, #check, #refresh, #refresh2, #refresh3 {
+	#sendemail, #check, #refresh, #refresh2, #refresh20, #refresh3 {
 		width:40%;
 	}
 	#paymentinfo {
@@ -723,10 +727,10 @@ p {
 		width: 90%;
 		font-size: 9px;
 	}
-	#refresh, #refresh2, #refresh3, #check, #sendemail {
+	#refresh, #refresh2, #refresh20, #refresh3, #check, #sendemail {
 		font-size:10px;
 	}
-	#sendemail, #check, #refresh, #refresh2, #refresh3 {
+	#sendemail, #check, #refresh, #refresh2, #refresh20, #refresh3 {
 		width:45%;
 	}
 	#paymentinfo {
@@ -800,7 +804,7 @@ p {
 		margin-bottom: 20px;
 		font-size:20px;
 	}
-	#refresh, #refresh2, #refresh3, #check, #sendemail {
+	#refresh, #refresh2, #refresh20, #refresh3, #check, #sendemail {
 		font-size: 20px;
 	}
 }

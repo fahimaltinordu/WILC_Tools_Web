@@ -162,7 +162,7 @@ formBtnNext2.addEventListener("click", function(e) {
 					<p><b>Payment amount:</b> <span id="paymentamount"></span></p>
 				  </div>
 				  <button class="btn btn-info noselect" id="refresh">Close Invoice</button>
-				  <button class="btn btn-info noselect" id="check">Check Payment</button>
+				  <button class="btn btn-info noselect" id="check"><i class="fa fa-search-dollar faa-flash animated"></i> Check Payment</button>
 			    `
 			   
 			   
@@ -171,9 +171,10 @@ formBtnNext2.addEventListener("click", function(e) {
 				  $("#usdamount").val("");
 				});
 			   
-				
 					 
 				$("#check").click(function() {
+					$(this).html('<i class="fas fa-spinner faa-spin animated faa-slow"></i> Processing...');
+
 					var address = $('#checkAddress').val(); 
 					// A filter for when a specific address receives tokens
 					const filter = TokenContract.filters.Transfer(null, address)

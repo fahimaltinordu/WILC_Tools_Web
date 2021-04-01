@@ -135,7 +135,7 @@ formBtnNext2.addEventListener("click", function(e) {
 					  <div id="sonuc2">
 						  <div>
 							<img draggable="false" src="img/WILC2.gif" width="100" height="100" alt="Loading QR">
-							<p id="loadingicon">Generating QR Code...</p>
+							<p id="loadingicon">Generating invoice...</p>
 						  </div>
 					  </div>
 					   `
@@ -151,7 +151,7 @@ formBtnNext2.addEventListener("click", function(e) {
 					  $('.form--result').css('display','none');
 					  $('.form--unconfirmation').css('display','none');
 					  $('.form--confirmation').css('display','none');
-                     },3000);
+                     },10000);
 			  
 			  document.querySelector(".form--message").innerHTML = `
 				  <div id="sonuc">
@@ -299,15 +299,15 @@ formBtnNext2.addEventListener("click", function(e) {
 						// });	
 				
 				
-				var apiprice = 'https://api.coingecko.com/api/v3/simple/price?ids=ilcoin&vs_currencies=usd'			
+				var apiprice = 'https://api.coinmarketinfo.com:9445/get_market?name=WILC-USD'			
 				fetch(apiprice).then(res=> {
 					res.json().then (data=> {
-						var price = data.ilcoin.usd;
-						console.log("ILC price: " + price);
+						var price = data.data.price;
+						console.log("WILC price: " + price);
 						var qrprice = (receipt/price).toFixed(8);
 						window.amountinwilc = qrprice;
 						$("#paymentamount").html(qrprice);
-						console.log("Payment amount in ILC: " + qrprice);
+						console.log("Payment amount in WILC: " + qrprice);
 
 						var qrcode = new QRCode(document.getElementById("qrcode"), {
 						text: "ethereum:"+address+"?amount="+qrprice,

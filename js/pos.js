@@ -220,13 +220,13 @@ formBtnNext2.addEventListener("click", function(e) {
 										
 								TokenContract.removeAllListeners();
 								
-							} else {
+							} else if (finalreceived < amountinwilc) {
 								$('.form--message').css('display','none');
 								$('.form--unconfirmation').css('display','block');
 									document.querySelector(".form--unconfirmation").innerHTML = `
 								  <div id="unconfirmtable">
 									<div>
-									<p><i class="fas fa-info-circle fa-5x" style="color:#15aabf;margin-bottom:10px;"></i></p>
+									<p><i class="fas fa-info-circle fa-5x" style="color:#fa0c64;margin-bottom:10px;"></i></p>
 									<p><b>Sender:</b> <span id="confirm2"></span></p>
 									<p><b>Tx ID:</b> <span id="confirm3"></span> </p>
 									<a id="txlinkinfo" href="" target="_blank">Check on Etherscan</a>
@@ -244,7 +244,7 @@ formBtnNext2.addEventListener("click", function(e) {
 								  $("#usdamount").val("");
 								});
 
-								var missing = amountinwilc-finalreceived;
+								var missing = (amountinwilc-finalreceived).toFixed(8);
 								$("#confirm1").html(finalreceived + " <b>WILC</b>");
 								$("#confirm2").html(sender);
 								$("#confirm3").html(txid);
@@ -254,6 +254,43 @@ formBtnNext2.addEventListener("click", function(e) {
 								var x = "https://ropsten.etherscan.io/tx/"
 								var result2 = x + txid;
 								$('#txlinkinfo').attr('href', result2);
+								
+								// Unsubscribe all listeners for event
+								TokenContract.removeAllListeners();
+							} else if (finalreceived > amountinwilc) {
+								$('.form--message').css('display','none');
+								$('.form--unconfirmation').css('display','block');
+									document.querySelector(".form--unconfirmation").innerHTML = `
+								  <div id="unconfirmtable">
+									<div>
+									<p><i class="fas fa-info-circle fa-5x" style="color:#15aabf;margin-bottom:10px;"></i></p>
+									<p><b>Sender:</b> <span id="confirm200"></span></p>
+									<p><b>Tx ID:</b> <span id="confirm300"></span> </p>
+									<a id="txlinkinfo" href="" target="_blank">Check on Etherscan</a>
+									<hr>
+									<p><b>Payment Amount:</b> <span id="confirm500"></span></p>
+									<p><b>You received:</b> <span id="confirm100"></span></p>
+									<p><strong>Extra Amount:</strong> <span id="confirm400"></span></p>
+								   </div>
+								  </div>
+								  <button class="btn btn-info noselect" id="refresh20">Close Invoice</button>
+								`
+								
+								$("#refresh20").click(function() {
+								  location.reload();
+								  $("#usdamount").val("");
+								});
+
+								var extraamount = (finalreceived - amountinwilc).toFixed(8);
+								$("#confirm100").html(finalreceived + " <b>WILC</b>");
+								$("#confirm200").html(sender);
+								$("#confirm300").html(txid);
+								$("#confirm400").html(extraamount + " <b>WILC</b>");
+								$("#confirm500").html(amountinwilc + " <b>WILC</b>");
+								
+								var x = "https://ropsten.etherscan.io/tx/"
+								var result3 = x + txid;
+								$('#txlinkinfo').attr('href', result3);
 								
 								// Unsubscribe all listeners for event
 								TokenContract.removeAllListeners();

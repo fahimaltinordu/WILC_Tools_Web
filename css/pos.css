@@ -245,8 +245,13 @@ button:hover {
 	padding: 5px;
 }
 
+#check {
+	color: #fff;
+    background-color: #07c088;
+    border-color: #07c088;
+}
 
-#sendemail, #check, #refresh, #refresh2, #refresh3 {
+#sendemail, #refresh, #refresh2, #refresh3 {
     color: #fff;
     background-color: #134981;
     border-color: #134981;
@@ -272,8 +277,8 @@ button:hover {
 
 #check:hover {
     color: #fff;
-    background-color: #316292;
-    border-color: #316292;
+    background-color: #069b6e;
+    border-color: #069b6e;
 } 
 
 #refresh:hover {

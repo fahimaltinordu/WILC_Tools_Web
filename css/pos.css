@@ -52,7 +52,7 @@ body {
 }
 .stepper {
   display: flex;
-  margin:auto;
+  margin:0 auto;
 }
 
 .step--1,
@@ -65,9 +65,12 @@ body {
   text-align: center;
   font-weight: 800;
 }
-.step--1,
+/* .step--1,
 .step--2 {
   border-right: 1px solid #5b83ab;
+} */
+.stepper :not(.step--3) {
+	border-right: 1px solid #5b83ab;
 }
 
 .step-active {

@@ -22,9 +22,9 @@ body {
 .blur {
     position:absolute;
     left:calc(50% - 175px);
-    top:calc(50% - 100px);
+    top:calc(50% - 150px);
     width:350px;
-    height:200px;
+    height:300px;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -52,7 +52,13 @@ body {
 .blur:hover {
     transform: scale(1.07);
 }
-@media screen and (max-width:375px) {
+.blur:hover p {
+    color: rgb(7, 224, 224);
+}
+.blur:hover h3:nth-of-type(2) {
+    color: rgb(7, 224, 224);
+}
+@media screen and (max-width:376px) {
     .blur {
         left:calc(50% - 125px);
         width:250px;

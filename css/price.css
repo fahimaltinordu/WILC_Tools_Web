@@ -23,20 +23,31 @@ body {
     position:absolute;
     left:calc(50% - 175px);
     top:calc(50% - 100px);
-    min-width:350px;
+    width:350px;
     height:200px;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:space-evenly;
+    text-align:center;
     border-radius:10px;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     transition: transform 0.5s;
+    cursor:pointer;
 }
 .blur h3 {
     color:white;
+}
+.blur p {
+    color:white;
+    font-size: 10px;
+}
+.blur p a {
+    color:white;
+    font-weight: 700;
+    font-size: 10px;
 }
 .blur:hover {
     transform: scale(1.07);
@@ -44,6 +55,7 @@ body {
 @media screen and (max-width:375px) {
     .blur {
         left:calc(50% - 125px);
-        min-width:250px;
+        width:250px;
+        text-align:center;
     }
 }

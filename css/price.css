@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    width:100%;
+    height:100vh;
+    background-color: rgb(41, 44, 44);
+    border-radius: 15px;
+    transition: transform 0.5s;
+    background-image: url(../img/wilc.png);
+    background-repeat: no-repeat;
+    background-size:200px;
+    background-position:center;
+}
+.blur {
+    position:absolute;
+    left:calc(50% - 175px);
+    top:calc(50% - 100px);
+    min-width:350px;
+    height:200px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+    border-radius:10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+.blur h3 {
+    color:white;
+
+}
+@media screen and (max-width:360px) {
+    .blur {
+        left:calc(50% - 125px);
+        min-width:250px;
+    }
+}

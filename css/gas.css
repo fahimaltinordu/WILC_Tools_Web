@@ -19,14 +19,22 @@ body {
 
 .content {
   background-color: #fff;
-  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
   height: auto;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
 }
+.content img {
+  width: 50%;
+  margin-bottom: 10px;
+}
 .content table {
-  border: 1px solid black;
+  border: 2px solid #134981;
   width: 100%;
   height: auto;
 }
@@ -37,7 +45,7 @@ body {
   margin-bottom: 5px;
 }
 .content table td {
-  border: 1px solid black;
+  border: 1px solid #134981;
 }
 .content table thead {
   text-align: center;
@@ -57,8 +65,7 @@ body {
   background-color: #134981;
 }
 .content table tbody tr td {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 5px;
   white-space: nowrap;
 }
 .content table tfoot {
@@ -84,6 +91,11 @@ body {
   }
   .content table caption {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .content {
+    width: 80%;
   }
 }
 

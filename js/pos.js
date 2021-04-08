@@ -1,7 +1,7 @@
 
-const provider = new ethers.providers.InfuraProvider("ropsten", "ec6d2493e2004b1f9723f2d11ddf356a");
+const provider = new ethers.providers.InfuraProvider("homestead", "ec6d2493e2004b1f9723f2d11ddf356a");
 
-const WilcContract = "0xf4f690befd90286964d6e85713272d5e692801e0";
+const WilcContract = "0xc98a910ede52e7d5308525845f19e17470dbccf7";
 
 const WilcAbi = [
   // Some details about the token
@@ -214,7 +214,7 @@ formBtnNext2.addEventListener("click", function(e) {
 								$("#confirm8").html(amountinwilc + " <b>WILC</b>");
 								$("#confirm9").html(finalreceived + " <b>WILC</b>");
 								
-								var x = "https://ropsten.etherscan.io/tx/"
+								var x = "https://etherscan.io/tx/"
 								var result1 = x + txid;
 								$('#txlinksuccess').attr('href', result1);
 										
@@ -251,7 +251,7 @@ formBtnNext2.addEventListener("click", function(e) {
 								$("#confirm4").html(missing + " <b>WILC</b>");
 								$("#confirm5").html(amountinwilc + " <b>WILC</b>");
 								
-								var x = "https://ropsten.etherscan.io/tx/"
+								var x = "https://etherscan.io/tx/"
 								var result2 = x + txid;
 								$('#txlinkinfo').attr('href', result2);
 								
@@ -288,7 +288,7 @@ formBtnNext2.addEventListener("click", function(e) {
 								$("#confirm400").html(extraamount + " <b>WILC</b>");
 								$("#confirm500").html(amountinwilc + " <b>WILC</b>");
 								
-								var x = "https://ropsten.etherscan.io/tx/"
+								var x = "https://etherscan.io/tx/"
 								var result3 = x + txid;
 								$('#txlinkinfo').attr('href', result3);
 								
